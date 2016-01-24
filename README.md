@@ -4,7 +4,12 @@ A demo of various prior distributions for a Bayes factor t test.
 
 To run, ensure your `shiny` installation is updated (this is important) 
 
-    install.packages('shiny')
+    install.packages(c('shiny','shinyjs'))
+
+you'll also need to install the `bioconductor` package `svgAnnotation`:
+
+    source("http://bioconductor.org/biocLite.R")
+    biocLite("SVGAnnotation")
 
 and then run in R:
     
