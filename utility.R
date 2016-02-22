@@ -77,13 +77,13 @@ dd.t = function(delta,N,rscale=sqrt(2)/2,location=0,df=1,lo=-Inf,up=Inf,return.l
   dy.t(delta*sqrt(N),N,rscale,location,df,lo,up,return.log)*sqrt(N)
 }
 
-tt = seq(-5,30,len=50)/sqrt(50)
-plot(tt,dd.t(tt,50,lo=0),ty='l')
+#tt = seq(-5,30,len=50)/sqrt(50)
+#plot(tt,dd.t(tt,50,lo=0),ty='l')
 
-dd = rcauchy(10000,scale=sqrt(2)/2)
-ts = rt(10000,49,dd*sqrt(50))
-hist(ts/sqrt(50),freq=FALSE)
-tt = seq(-5,30,len=50)/sqrt(50)
-lines(tt,dd.t(tt,50,lo=0),ty='l',col="red")
+#dd = rcauchy(10000,scale=sqrt(2)/2)
+#ts = rt(10000,49,dd*sqrt(50))
+#hist(ts/sqrt(50),freq=FALSE)
+#tt = seq(-5,30,len=50)/sqrt(50)
+#lines(tt,dd.t(tt,50,lo=0),ty='l',col="red")
 
 
